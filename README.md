@@ -24,8 +24,7 @@
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: Node.js  
-- **APIs Used**: Gemini API  
-- **Other Tools**: Webcam access, Face detection (e.g., [mention the library used if any])
+- **APIs Used**: Gemini API, Face API
 
 ---
 
