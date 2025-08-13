@@ -84,7 +84,7 @@ function updateScore() {
 }
 
 // --- Step 5: AI-powered Features ---
-const SERVER_URL = 'http://localhost:3000/api/gemini'; // URL of our local backend
+const SERVER_URL = 'https://smile-rewards2.onrender.com/api/gemini'; // URL of our local backend
 
 async function callSecureGemini(prompt, button, resultElement) {
     button.disabled = true;
