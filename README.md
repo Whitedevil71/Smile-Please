@@ -39,7 +39,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/smile-please.git
+git clone https://github.com/Whitedevil71/Smile-Please.git
 cd smile-please
 
 # Install dependencies
