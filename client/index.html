@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Tracker AI</title>
+    <!-- Import the correct browser-compatible version of face-api.js -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This div is for the animated background -->
+    <div class="aurora-background"></div>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>Smile Tracker AI</h1>
+            <p>Your daily dose of positivity. Smile to earn points!</p>
+        </header>
+
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay muted></video>
+            <canvas></canvas>
+        </div>
+
+        <div id="message" class="message">Loading AI models...</div>
+        <div class="score-container">
+            <h2>Your Score: <span id="score">0</span></h2>
+        </div>
+
+        <hr>
+
+        <section class="theme-section">
+            <h2>✨ AI Theme Generator</h2>
+            <div class="input-group">
+                <input type="text" id="themeInput" placeholder="e.g., calm ocean, energetic sunrise">
+                <button id="themeButton">Generate Theme</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="mood-section">
+            <h2>How are you feeling today?</h2>
+            <div class="input-group">
+                <input type="text" id="moodInput" placeholder="e.g., happy, tired, motivated">
+                <button id="adviceButton">Get Quick Advice</button>
+            </div>
+            <div id="adviceText" class="message advice"></div>
+        </section>
+
+        <hr>
+
+        <section class="pep-talk-section">
+            <h2>✨ Personalized Pep Talk</h2>
+            <div class="input-group">
+                <textarea id="pepTalkInput"
+                    placeholder="Tell me what's on your mind... e.g., 'I'm nervous about a big presentation tomorrow.'"></textarea>
+                <button id="pepTalkButton">Get Pep Talk</button>
+            </div>
+            <div id="pepTalkDisplay" class="pep-talk-display" style="display: none;"></div>
+        </section>
+
+    </div>
+
+    <!-- Our application's JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
