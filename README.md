@@ -29,12 +29,6 @@
 
 ---
 
-## 📸 Demo
-
-> Add a link to a live demo or a short GIF/video here (if available)
-
----
-
 ## 🔧 Setup & Installation
 
 ```bash
